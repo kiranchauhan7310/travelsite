@@ -6,7 +6,8 @@
 
         header {
             background-image: url(imgs/backgroundImg.jpg);
-            height: 100vh;
+            height: 632px;
+
             background-position: center;
             background-size: cover;
         }
@@ -90,7 +91,7 @@
         }
 
         .main {
-            height: 100vh;
+             height: 632px;
             background-color: aliceblue;
         }
 
@@ -119,7 +120,7 @@
             margin: 20px;
             align-items: center;
         }
-        
+
         .cards img {
             height: 270px;
             width: 351px;
