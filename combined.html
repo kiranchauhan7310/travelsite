@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .background {
+            background-color: rgba(0, 255, 255, 0.148);
+            height: 100vh;
+            background-position: center;
+            background-size: center;
+        }
+
+        .flex{
+            display: flex;
+        }
+        .Tour {
+            
+            justify-content: space-between;
+            padding: 20px 10px;
+            align-items: center;
+        }
+
+        .symbol span {
+            margin: 0px 2px;
+            border-radius: 50%;
+            border: 1px solid;
+            font-size: 30px;
+        }
+
+        .Tour h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+        }
+
+        .cards {
+            /* padding: 10px; */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            width: 350px;
+            background-color: white;
+        }
+
+        .cards img {
+            height: 300px;
+            width: 100%;
+            /* border-radius: 5%; */
+        }
+
+        .Details {
+            justify-content: space-between;
+           
+            /* padding: 10px 0px; */
+        }
+
+        .Guide {
+            color: red;
+        }
+
+        .cards p {
+            font-size: larger;
+            font-family: emoji;
+
+        }
+
+        .Card {
+          
+            padding: 20px;
+            gap: 30px;
+            margin: 10px 111px;
+
+        }
+
+        .background {
+            background-color: #dcdcdc52;
+        }
+
+        .para {
+            margin: 10px;
+        }
+
+        .para p {
+            margin: 10px 0px;
+        }
+
+        .Main {
+            background-color: rgba(255, 228, 196, 0.443);
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .Heading {
+           
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 40px;
+        }
+
+        .Heading h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+
+        .symbols span {
+            padding: 10px;
+            border-radius: 50%;
+            border: 1px solid;
+            margin: 0 2px;
+            align-items: center;
+        }
+
+        .quotes span {
+            color: red;
+            font-size: 200%;
+        }
+
+        .rating span {
+            color: gold;
+            font-size: 100%;
+            margin-top: 5px;
+        }
+
+        .Comment {
+           
+            justify-content: space-between;
+            padding: 21px;
+        }
+
+        .paragraph {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 25px;
+            align-items: center;
+            text-align: justify;
+
+        }
+
+        .blocks {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            width: 325px;
+            background-color: white;
+            height: 400px;
+        }
+
+        .profile img {
+            height: 29%;
+            width: 17%;
+            border-radius: 69%;
+        }
+
+        .profile {
+          
+            gap: 32px;
+            margin: 55px 20px;
+            align-items: center;
+        }
+
+        .block {
+           
+            justify-content: space-around;
+            padding: 29px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="Tour flex">
+            <h1>Tour Guide</h1>
+            <div class="symbol">
+                <span><i class="ri-arrow-right-s-line"></i></span>
+                <span><i class="ri-arrow-left-s-line"></i></span>
+            </div>
+        </div>
+        <div class="Card flex">
+            <div class="cards">
+                <img src="imgs/Card1img.jpg" alt="">
+                <div class="para">
+                    <div class="Details">
+                        <div class="Name">
+                            <h3>Elias Hossain</h3>
+                        </div>
+                        <div class="Guide">
+                            <h3>Forest Guide</h3>
+                        </div>
+                    </div>
+                    <p>With a deep passion for forests, our experts are commites to craft immersive experience to
+                        connect
+                        with the wilderness.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="imgs/Card1img2.jpg" alt="">
+                <div class="para">
+                    <div class="Details">
+                        <div class="Name">
+                            <h3>Ahmad Hamdy</h3>
+                        </div>
+                        <div class="Guide">
+                            <h3>Ocean Guide</h3>
+                        </div>
+                    </div>
+                    <p>Join us as we embark on a journey of inspiring encounters in the ocean's surface where secrets
+                        become
+                        of your unforgettable memories.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="imgs/Card1img3.jpg" alt="">
+                <div class="para">
+                    <div class="para">
+                        <div class="Details">
+                            <div class="Name">
+                                <h3>Esiam Samir</h3>
+                            </div>
+                            <div class="Guide">
+                                <h3>City Guide</h3>
+                            </div>
+                        </div>
+                        <p>With a passion for travel and a commitement to excellence, we curate memorable experiences
+                            that
+                            go
+                            beyond the ordinary.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Main">
+        <header>
+            <div class="Heading flex">
+                <h1>Clients Feedback</h1>
+                <div class="symbols">
+                    <span><i class="ri-arrow-left-s-line"></i></span>
+                    <span><i class="ri-arrow-right-s-line"></i></span>
+                </div>
+            </div>
+        </header>
+        <div class="block flex">
+            <div class="blocks">
+                <div class="Comment">
+                    <div class="quotes">
+                        <span><i class="ri-double-quotes-r"></i></span>
+                    </div>
+                    <div class="rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-line"></i></span>
+                        <span><i class="ri-star-line"></i></span>
+                    </div>
+                </div>
+                <div class="paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit excepturi ipsa possimus
+                        repellendus labore provident, quod nemo dolorum, ratione, necessitatibus blanditiis natus
+                        laudantium! Maxime, autem ducimus. Sapiente consequuntur reprehenderit impedit?</p>
+                </div>
+                <div class="profile flex">
+                    <img src="imgs/Card1img.jpg" alt="">
+                    <h4>Mike Henderson <br>Business Manager & CEO</h4>
+                </div>
+            </div>
+            <div class="blocks">
+                <div class="Comment">
+                    <div class="quotes">
+                        <span><i class="ri-double-quotes-r"></i></span>
+                    </div>
+                    <div class="rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-line"></i></span>
+                        <span><i class="ri-star-line"></i></span>
+                    </div>
+                </div>
+                <div class="paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptas saepe est asperiores
+                        optio unde doloribus rem adipisci consectetur rerum.</p>
+                </div>
+                <div class="profile">
+                    <img src="imgs/Card1img2.jpg" alt="">
+                    <h4>Paul Harrison <br>Director</h4>
+                </div>
+            </div>
+            <div class="blocks">
+                <div class="Comment">
+                    <div class="quotes">
+                        <span><i class="ri-double-quotes-r"></i></span>
+                    </div>
+                    <div class="rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-line"></i></span>
+                        <span><i class="ri-star-line"></i></span>
+                    </div>
+                </div>
+                <div class="paragraph">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci earum, quis molestiae vel
+                        labore at asperiores. Exercitationem quam aut itaque.</p>
+                </div>
+                <div class="profile">
+                    <img src="imgs/Card1img3.jpg" alt="">
+                    <h4>John Williams <br>Content Writer</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

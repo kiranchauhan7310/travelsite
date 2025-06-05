@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Icon Link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exile&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .brand {
+            margin: 0 50px;
+            width: 100px;
+        }
+
+        .brand img {
+            height: 100px;
+            width: 300px;
+        }
+
+        .heading {
+            font-size: 100%;
+            text-transform: uppercase;
+            color: #f2184f;
+            margin-left: 110px;
+
+        }
+
+        .contactdetails {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            padding-right: 10px;
+            color: #f2184f;
+        }
+
+        .contact a {
+            color: #f2184f;
+            padding: 0 10px;
+            text-decoration: none;
+        }
+
+        .email {
+            padding: 10px;
+        }
+
+        .email a {
+            color: #f2184f;
+            text-decoration: none;
+        }
+
+        .button button {
+            background-color: red;
+            color: white;
+            border: none;
+            font-size: 1rem;
+            margin: 0px 10px;
+            padding: 0px 20px;
+            border-radius: 4px;
+        }
+
+        .links {
+            background-color: #f2184f;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+        }
+
+        .navbar-link:hover {
+            background-color: white;
+            color: red;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            padding: 5px 12px;
+            font-size: 16px;
+            color: white;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .socialmedia a {
+            text-decoration: none;
+            padding: 2px 12px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .transformbg {
+            background-image: url(imgs/school.jpg);
+            height: 400px;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .box-acheive {
+            height: 155px;
+            background-color: #ff000082;
+            width: 40%;
+            color: white;
+            border-radius: 5px;
+            transform: translate(24rem, 22rem);
+            padding: 0px 30px;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 40px;
+        }
+
+        .acheivement-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .acheivement-icon h1 {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .acheivement-icon span {
+            font-size: 4rem;
+        }
+
+        .body {
+            display: flex;
+            justify-content: space-between;
+            padding: 70px 120px;
+            margin-top: 70px;
+        }
+
+        .profileimg img {
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            margin: 20px;
+            border: 5px solid pink;
+        }
+
+        .paragraph {
+            padding: 20px 25px;
+            word-spacing: 6px;
+        }
+
+        .paragraph h1 {
+            font-size: 160%;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .paragraph p {
+            font-weight: 300;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .paragraph span {
+            color: #f2184f;
+            font-weight: bold;
+            font-size: 130%;
+        }
+
+        .bg-mgmt {
+            background-color: #f2184e;
+            padding: 35px 110px;
+        }
+
+        .mgmt-team {
+            background-color: rgba(10, 10, 10, 0.17);
+            display: flex;
+            justify-content: center;
+        }
+
+        .principal-img {
+            padding: 10px 15px;
+        }
+
+        .about-team {
+            padding: 11px 15px;
+            text-align: justify;
+            color: white;
+            font-size: 15px;
+        }
+
+        .about-team a {
+            color: white;
+        }
+
+        .photogallery-bg {
+            background-color: #eaeaea;
+            margin: 25px 0;
+            height: 350px;
+            padding: 115px 97px;
+        }
+
+        .gallery-h1 {
+            text-transform: uppercase;
+            color: #f2184e;
+            text-align: center;
+        }
+
+        .gallery-img img {
+            height: 200px;
+            width: 167px;
+            margin: 12px 6px;
+            border: 5px solid white;
+            border-radius: 5%;
+        }
+
+        .photo:hover {
+            /* transform: translateX(10px); - for side transition*/
+            transform: scale(1.2);
+            /*   for zoom in*/
+            transition: all 600ms linear;
+        }
+
+        .f {
+            background-color: #f2184f;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .f-image img {
+            height: 100px;
+            width: 330px;
+        }
+
+        .f-address {
+            margin: 20px 40px;
+            color: white;
+        }
+
+        .f-contact h3 {
+            margin: 20px 40px;
+            color: white;
+        }
+
+        .f-links i {
+            margin: 20px 40px;
+            gap: 10px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .para {
+            font-size: 15px;
+            color: #fff;
+            font-style: italic;
+            text-align: justify;
+            margin: 55px 120px 0 155px;
+            word-spacing: 8px;
+            width: 40%;
+        }
+
+        .footer-left {
+            margin: 10px 125px;
+            font-size: 15px;
+        }
+
+        .f-para {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 500;
+            padding-bottom: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="brand">
+            <a href="file:///C:/Users/ushac/OneDrive/Desktop/Travelling%20Site/Project1.html">
+                <img src="https://motherspridepataudi.com/wp-content/themes/mothers-pride/img/logo/logo.jpg"
+                    alt="Mother's Pride Logo"></a>
+        </div>
+        <div class="heading">
+            <h1>Be What You Want To Be</h1>
+        </div>
+        <div class="contactdetails">
+            <div class="contact">
+                <a href=""><i class="ri-phone-line">+98 9764 1234</i></a>
+                <a href="">+97 9764 3421</a>
+            </div>
+            <div class="email">
+                <a href=""><i class="ri-mail-line">info@motherspridepataudi.com</i></a>
+            </div>
+            <div class="button"><button>Enquiry Form</button></div>
+        </div>
+    </div>
+
+    <div class="links">
+        <div class="socialmedia">
+            <a href=""><i class="ri-facebook-fill"></i></a>
+            <a href=""><i class="ri-instagram-line"></i></a>
+            <a href=""><i class="ri-whatsapp-line"></i></a>
+        </div>
+        <div class="homehead">
+            <ul class="navbar">
+                <li><a class="navbar-link" href="">Home</a></li>
+                <li><a class="navbar-link" href="">Facilities</a></li>
+                <li><a class="navbar-link" href="">Events</a></li>
+                <li><a class="navbar-link" href="">Gallery</a></li>
+                <li><a class="navbar-link" href="">About Us</a></li>
+                <li><a class="navbar-link" href="">Curriculum</a></li>
+                <li><a class="navbar-link" href="">Contact Us</a></li>
+                <li><a class="navbar-link" href="">Student Login</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="transformbg">
+        <div class="box-acheive">
+            <div class="acheivement-icon">
+                <Span><i class="ri-school-line"></i></Span>
+                <h1>Since <br> 1996 </h1>
+            </div>
+            <div class="acheivement-icon"> <span><i class="ri-graduation-cap-line"></i></span>
+                <h1>150,000+ <br> Happy Students </h1>
+            </div>
+            <div class="acheivement-icon"> <span><i class="ri-presentation-line"></i></span>
+                <h1> 110 <br> Schools</h1>
+            </div>
+            <div class="acheivement-icon"> <span><i class="ri-medal-fill"></i></span>
+                <h1>Awards Won <br> 100+ </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="profileimg">
+            <img src="imgs/school.jpg" alt="School image">
+        </div>
+        <div class="paragraph">
+            <h1>Mother’s Pride Pataudi Welcomes You All</h1>
+            <p>Selecting a school for your child is never easy process for every parent and it the the first and the
+                foremost step in process of enrolling your child into a best school in Pataudi i.e. Mother’s Pride
+                Pataudi, we believe in giving children an environment where their dreams can flourish in the best way
+                possible, and that is why we are ranked the best cbse and play school in Pataudi, Gurgaon. We've crafted
+                our classes in a way to motivate each child to develop, learn, and concentrate on their overall growth,
+                equipping them to tackle life with confidence and resolve. <br><br>
+
+                From playgroup to Class XII, this CBSE affiliated school near Gurugram gives students the opportunity to
+                study hard and participate in a number of valuable extracurricular activities. For those who're looking
+                for an affordable school in Pataudi or a top CBSE school in Pataudi, Gurgaon, with all modern
+                facilities, look no further <span>“Mother'S Pride School”</span> has everything.</p>
+        </div>
+    </div>
+
+    <div class="bg-mgmt">
+        <div class="mgmt-team">
+            <div class="principal-img"><img
+                    src="https://motherspridepataudi.com/wp-content/uploads/2024/03/thePrinci-250x300.jpg" alt="image">
+            </div>
+            <div class="about-team">
+                <h3> Mrs. Rajni Yadav <br> <br> (Principal, Mother’s Pride School) </h3> <br>
+                <p>As the principal of Mother’s Pride School, she has been serving in the field of education for several
+                    years and has a keen interest in the mental and emotional growth of students. She feels that every
+                    child
+                    should have a simple, enjoyable, and meaningful learning experience. Her vision puts forward the
+                    idea of
+                    children learning profound concepts in an enjoyable and easily comprehensible manner. Every student
+                    at
+                    Mother’s Pride School is encouraged to learn inquisitively, confidently, and joyfully because of her
+                    leadership qualities.</p><br>
+                <a href="https://motherspridepataudi.com/management-team/#block-principal" target="blank">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="photogallery-bg">
+        <div class="photogallery">
+            <div class="gallery-h1">
+                <h1>Photo Gallery</h1>
+            </div>
+            <div class="gallery-img">
+                <img class="photo" src="https://motherspridepataudi.com/wp-content/uploads/2024/03/1-1.jpg" alt="">
+                <img class="photo" src="https://motherspridepataudi.com/wp-content/uploads/2024/03/2-1.jpg" alt="">
+                <img class="photo" src="https://motherspridepataudi.com/wp-content/uploads/2024/03/3-1.jpg" alt="">
+                <img class="photo" src="https://motherspridepataudi.com/wp-content/uploads/2024/03/4.jpg" alt="">
+                <img class="photo" src="https://motherspridepataudi.com/wp-content/uploads/2024/03/5.jpg" alt="">
+                <img class="photo" src="https://motherspridepataudi.com/wp-content/uploads/2024/03/6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="f">
+        <div class="footer">
+            <div class="footer-left">
+                <div class="f-image">
+                    <img src="https://motherspridepataudi.com/wp-content/uploads/2024/04/footer-logo.png" alt="">
+                </div>
+                <div class="f-address">
+                    <address>221, Ward No: 6, Opposite Govt. Hospital, <br>
+                        Near Bharat petrol Pump,<br>
+                        Pataudi Road, Haily Mandi. <br>
+                        Dist-Gurgaon(Hr) <br>
+                        Pin No : 122504</address>
+                </div>
+                <div class="f-contact">
+                    <h3>Contact</h3>
+                    <div class="f-links">
+                        <i class="ri-phone-line">
+                            <p>+91 7027 700 966 , <br> +91 7027 700 967</p>
+                        </i>
+                        <i class="ri-mail-line">
+                            <p>info@motherspride.com</p>
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="para">
+                    <h3>Nelson Mandela</h3>
+                    <p>The creator of an apartheid-free South Africa and its first democratically elected president, and
+                        the
+                        1993 Nobel Prize winner for peace, he is one of the most inspiring leaders the world has ever
+                        seen.
+                        A man of unwavering conviction who refused to compromise his political conviction and remained
+                        in
+                        prison to inspire a freedom movement for 26 long years.</p>
+                </div>
+            </div>
+        </div>
+        <div class="f-para">
+            <p>The School Run by Om Ji Education Trust</p>
+        </div>
+    </div>
+</body>
+
+</html>
