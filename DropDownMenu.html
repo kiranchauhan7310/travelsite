@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            display: flex;
+        }
+        .navItem{
+            background-color: aqua;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            display: block;
+        }
+        .navDrop{
+            position: relative;
+        }
+
+        .navDrop:hover .dropdown{
+            display: block;
+        }
+        .dropdown{
+            position: absolute;
+             background-color: aqua;
+             display: none;
+             left: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="navItem">
+            <a href="navLinks">Home</a>
+        </div>
+        <div class="navItem">
+            <a href="navLinks">About Us</a>
+        </div>
+        <div class="navItem navDrop">
+            <a href="navLinks">Courses</a>
+            <div class="dropdown">
+                <a href="navLinks">Java</a>
+                <a href="navLinks">Python</a>
+                <a href="navLinks">PHP</a>
+                <a href="navLinks">Nodejs</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px;
+        }
+
+           .cards{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 5rem 0;
+        }
+        .card{
+            height: 300px;
+            background-color: brown;
+            width: 299px;
+            border: 2px solid black;
+        }
+
+
+        /* Mobile Screen */
+
+        @media (max-width:425px) {
+            .container{
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .cards{
+                flex-direction: column;
+                gap: 10px;
+            }
+          
+        }
+
+
+     
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>Kiran Co.</h1>
+        </div>
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Login</a>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+    </div>
+</body>
+
+</html>
